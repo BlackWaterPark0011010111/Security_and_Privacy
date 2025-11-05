@@ -17,7 +17,7 @@ PYPLOT:
 matplotlib.pyplot -> import matplotlib.pyplot as plt
 ```
 указываем координаты на оси[1,4,8,6,9] 
-->plt.plot([1,4,8,6,9]) 
+->plt.plot([1,4,8,6,9])  
 ``` 
 и    
 plt.show()-чтобы увидеть график
