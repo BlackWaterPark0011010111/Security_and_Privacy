@@ -1,4 +1,3 @@
-# ...existing code...
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -8,7 +7,6 @@ squares = [1, 4, 9, 16, 25]
 
 fig, ax = plt.subplots()
 
-# Показываем все точки и линию
 ax.scatter(input_values, squares, s=50, c='red', label='points')
 ax.plot(input_values, squares, linewidth=3, label='line')
 
