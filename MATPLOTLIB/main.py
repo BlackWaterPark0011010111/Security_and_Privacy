@@ -1,18 +1,22 @@
+# ...existing code...
 import matplotlib.pyplot as plt
-input_values=[1,2,3,4,5]
-squares=     [1,4,9,16,25]
+import seaborn as sns
 
-#plt.style.use('seaborn')
+
+input_values = [1, 2, 3, 4, 5]
+squares = [1, 4, 9, 16, 25]
+
 fig, ax = plt.subplots()
-ax.scatter(2, 4)
-#ax.plot(squares,linewidth=3)
-ax.plot(input_values,squares,linewidth=3)
-ax.set_title('Square Nums', fontsize=30)
+
+# Показываем все точки и линию
+ax.scatter(input_values, squares, s=50, c='red', label='points')
+ax.plot(input_values, squares, linewidth=3, label='line')
+
+ax.set_title('Square Numbers', fontsize=30)
 ax.set_xlabel('Value', fontsize=15)
-ax .set_ylabel('Square of Value', fontsize=10)
-ax.tick_params(axis='both',labelsize=15)
-plt.grid()
+ax.set_ylabel('Square of Value', fontsize=15)
+ax.tick_params(axis='both', labelsize=12)
+ax.grid()
+ax.legend()
+fig.tight_layout()
 plt.show()
-
-
-
