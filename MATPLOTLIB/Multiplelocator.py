@@ -8,7 +8,7 @@ ax.plot(np.arange(1,5,0.25))
 
 ax.xaxis.set_major_locator(MultipleLocator(base=4))
 ax.grid()
-plt.show() 
+plt.show()  
 
 """MultipleLocator = он позволяет задавать шаг между рисочками на оси координат 
 и для этого используется параметр base к которому приравнивается значение точнее сколько отрезов мы хотим видеть на оси
