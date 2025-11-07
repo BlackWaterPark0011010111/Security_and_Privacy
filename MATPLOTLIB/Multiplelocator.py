@@ -7,7 +7,7 @@ ax=fig.add_subplot()
 ax.plot(np.arange(1,5,0.25))
 
 ax.xaxis.set_major_locator(MultipleLocator(base=4))
-ax.grid()
+ax.grid() 
 plt.show()   
   
 """MultipleLocator = он позволяет задавать шаг между рисочками на оси координат 
